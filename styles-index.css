@@ -1,0 +1,218 @@
+/* elements------------------------------------------------------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700;900&display=swap');
+
+body, html {
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    text-transform: lowercase;
+    }
+
+header {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 12px;
+}
+
+.pink-text {
+    color: #bb86fc;
+}
+
+.purple-text {
+    color: #3700b3;
+}
+
+.green-text {
+    color: #03dac6;
+}
+
+.invert {
+    filter: invert(100%); 
+}
+
+a:hover {
+    color: #03dac6;
+    }
+
+a:active {
+    color: white;
+    }
+
+/* Header -----------------------------------------------------------------------------------------------------------------*/
+
+#img-logo {
+    width: 110px;
+    position: relative;
+    text-decoration: none;
+    filter: invert(100%); 
+    display: flex;
+    flex: 1;
+    padding-left: 20px;
+}
+
+#navigation-container {
+    position: relative;
+    background-color: #121212;
+    filter:contrast(95%);
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+
+}    
+
+.nav-selected {
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+    text-size-adjust: auto;
+    padding: 0pc 20px 0 20px;
+}
+
+.nav-text {
+    text-decoration: none;
+    color: white;
+    font-weight:300;
+    text-size-adjust: auto;
+    padding: 0pc 20px 0 20px;
+}
+
+/* Body -----------------------------------------------------------------------------------------------------------------*/
+
+#hero {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin:3em auto;
+}
+
+/* Body - Column 1 -----------------------------------------------------------------------------------------------------------------*/
+
+#icon-index {
+    max-width: 70px;
+    object-fit: contain;
+    filter: invert(100%);
+    margin-bottom: 2em;
+}
+
+#column-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Body - Column 2 -----------------------------------------------------------------------------------------------------------------*/
+
+.photo {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#column-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer -----------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/* Media Queries: Between 600 - 900px wide (Tablet) -----------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 900px) {
+    
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+
+    h2{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    #hero{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+
+    #icon-index {
+        margin:auto;
+        margin-bottom: 2em;
+    }
+
+    .photo {
+        align-items: center;
+    }
+    
+}
+/* Media Queries: Smaller than 600px wide (Mobile) -----------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+    
+    header{
+        display: inline-flex;
+        align-items: stretch;
+    }
+
+    #navigation-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        max-width: 80%;
+        }
+
+    #icon-index {
+        margin:2em auto;
+    }
+
+    #photo-index {
+        align-items: center;
+    }
+
+}
