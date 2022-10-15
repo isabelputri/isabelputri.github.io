@@ -209,18 +209,23 @@ a:active {
     /* height: 50px; */
 }
 
+.page.work {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
 .column {
     width: 29%;
-    height: auto;
-    padding: 1%;
-    margin: 0.5%;
-    display: inline-block;
+    min-height: 250px;
     object-fit: contain;
-    vertical-align: middle;
-    align-items: center;
-    border: 1px solid white;
+    border: 1px solid rgb(221, 214, 214);
+    margin: 2em auto;
 }
 
+.column img {
+    width: 100%;
+    object-fit: contain;
+}
 
 /* Footer -----------------------------------------------------------------------------------------------------------------*/
 
@@ -243,10 +248,6 @@ footer{
         margin: auto;
     }
     
-    main {
-        height: 950px;
-    }
-    
     .page .links .links-heading {
         display: flex;
         flex-direction: column;
@@ -255,6 +256,10 @@ footer{
     #icon-about {
         width: 40px;
         margin: auto;
+    }
+
+    .column{
+    min-height: 150px;
     }
 
 }
@@ -267,9 +272,6 @@ footer{
         align-items: stretch;
     }
 
-    main {
-        height: 1100px;
-    }
     #navigation-container{
         display: flex;
         flex-direction: column;
@@ -286,5 +288,16 @@ footer{
         display: flex;
         padding: 30px;
     }
+
+    .page.work {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: .5em auto;
+    }
+
+    .column{
+        min-width: 80%;
+        }
 
 }
