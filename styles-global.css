@@ -112,7 +112,7 @@ a:active {
 
 /* Banner -----------------------------------------------------------------------------------------------------------------*/
 
-.banner-image {
+.banner-image{
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
         url("Images/banner-about.jpg");
@@ -125,16 +125,23 @@ a:active {
     align-items: center;
     }
 
+.banner-image .about{
+    background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+        url("Images/banner-about.jpg");
+    }
+
 .banner-text {
     text-align: center;
 } 
 
 /* Content  -----------------------------------------------------------------------------------------------------------------*/
 
-#photo-index {
+#photo {
     max-width: 50%;
     border-radius: 50%;
-    margin: auto;
+    margin: 2em auto;
+    display: flex;
 }
 
 .bio {
