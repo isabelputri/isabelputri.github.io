@@ -17,12 +17,18 @@ body {
 
 header {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
 main {
     min-height: 50vh;
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 nav {
@@ -65,13 +71,19 @@ p{
     filter: invert(100%); 
 }
 
+a {
+    transition: all .2s ease-in-out;
+}
+
 a:hover {
     color: #03dac6;
+    transform: scale(1);
     }
 
 a:active {
     color: white;
     }
+
 
 /* Header -----------------------------------------------------------------------------------------------------------------*/
 
@@ -115,12 +127,33 @@ a:active {
 
 /* Body -----------------------------------------------------------------------------------------------------------------*/
 
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+blink{animation: blink 1s infinite;}
+
 #hero {
     width: 80%;
     display: flex;
     flex-direction: row;
     margin:3em auto;
 }
+
+.typing {
+    overflow: hidden; 
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+} 
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 /* Body - Column 1 -----------------------------------------------------------------------------------------------------------------*/
 
