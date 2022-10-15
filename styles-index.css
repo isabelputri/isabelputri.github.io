@@ -11,10 +11,19 @@ body, html {
     text-transform: lowercase;
     }
 
+body {
+    margin: 0;
+    }
+
 header {
     width: 100%;
     max-width: 1400px;
     margin: auto;
+}
+
+main {
+    min-height: 70vh;
+    width: 100%;
 }
 
 nav {

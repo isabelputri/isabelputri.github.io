@@ -11,10 +11,27 @@ body,html {
     text-transform: lowercase;
     }
 
+body {
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+}
+
 header {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+}
+
+main {
+    height: auto;
+    width: 100%;
+}
+.page {
+    width: 80%;
 }
 
 nav {
@@ -33,6 +50,12 @@ h2{
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
+}
+
+h3 {
+    font-size: .75rem;
+    text-align: center;
+    font-weight: 400;
 }
 
 p{
@@ -112,7 +135,7 @@ a:active {
 
 /* Banner -----------------------------------------------------------------------------------------------------------------*/
 
-.banner-image{
+.banner-image {
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
         url("Images/banner-about.jpg");
@@ -123,12 +146,6 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-
-.banner-image .about{
-    background-image:
-        linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
-        url("Images/banner-about.jpg");
     }
 
 .banner-text {
@@ -147,7 +164,7 @@ a:active {
 .bio {
     width: fit-content;
     max-width: 1400px;
-    margin: auto;
+    margin: 2em auto;
 }
 
 .links {
@@ -176,6 +193,7 @@ a:active {
 }
 
 #icon-about {
+    width: 30px;
     object-fit: contain;
     filter: invert(100%);
     padding: 10px;
@@ -185,8 +203,21 @@ a:active {
     display: inline-flex;
     flex-direction: row;
     width: fit-content;
-    height: 50px;
+    /* height: 50px; */
 }
+
+.column {
+    width: 29%;
+    height: auto;
+    padding: 1%;
+    margin: 0.5%;
+    display: inline-block;
+    object-fit: contain;
+    vertical-align: middle;
+    align-items: center;
+    border: 1px solid white;
+}
+
 
 /* Footer -----------------------------------------------------------------------------------------------------------------*/
 
@@ -208,12 +239,21 @@ footer{
         max-width: 800px;
         margin: auto;
     }
-    .bio {
-    width: 80%;
-    margin: auto;
-}
-
     
+    main {
+        height: 950px;
+    }
+    
+    .page .links .links-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon-about {
+        width: 40px;
+        margin: auto;
+    }
+
 }
 /* Media Queries: Smaller than 600px wide (Mobile) -----------------------------------------------------------------------------------------------------------------*/
 
@@ -224,6 +264,9 @@ footer{
         align-items: stretch;
     }
 
+    main {
+        height: 1100px;
+    }
     #navigation-container{
         display: flex;
         flex-direction: column;
@@ -239,11 +282,6 @@ footer{
         width: auto;
         display: flex;
         padding: 30px;
-    }
-
-    .links .social{
-        display: flex;
-        flex-direction: column;
     }
 
 }
