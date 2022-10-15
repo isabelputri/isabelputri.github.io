@@ -240,10 +240,6 @@ footer{
         margin: auto;
     }
     
-    main {
-        height: 950px;
-    }
-    
     .page .links .links-heading {
         display: flex;
         flex-direction: column;
@@ -264,9 +260,6 @@ footer{
         align-items: stretch;
     }
 
-    main {
-        height: 1100px;
-    }
     #navigation-container{
         display: flex;
         flex-direction: column;
