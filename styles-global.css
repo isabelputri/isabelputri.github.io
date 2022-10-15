@@ -80,6 +80,8 @@ p{
 
 a:hover {
     color: #03dac6;
+    cursor: pointer;
+    transform: scale(1.2);
     }
 
 a:active {
@@ -154,15 +156,14 @@ a:active {
 
 /* Content  -----------------------------------------------------------------------------------------------------------------*/
 
-#photo {
-    max-width: 50%;
+#photo-index {
+    max-width: 20%;
     border-radius: 50%;
     margin: 2em auto;
     display: flex;
 }
 
-.bio {
-    width: fit-content;
+.page {
     max-width: 1400px;
     margin: 2em auto;
 }
@@ -177,6 +178,8 @@ a:active {
     color: #03dac6;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .social:active a{
@@ -240,6 +243,10 @@ footer{
         margin: auto;
     }
     
+    main {
+        height: 950px;
+    }
+    
     .page .links .links-heading {
         display: flex;
         flex-direction: column;
@@ -260,6 +267,9 @@ footer{
         align-items: stretch;
     }
 
+    main {
+        height: 1100px;
+    }
     #navigation-container{
         display: flex;
         flex-direction: column;
