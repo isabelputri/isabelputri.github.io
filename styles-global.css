@@ -129,7 +129,7 @@ a:active {
     color: white;
     font-weight:600;
     text-size-adjust: auto;
-    padding: 0pc 20px 0 20px;
+    padding: 0 20px 0 20px;
 }
 
 .nav-text {
@@ -137,7 +137,7 @@ a:active {
     color: white;
     font-weight:300;
     text-size-adjust: auto;
-    padding: 0pc 20px 0 20px;
+    padding: 0 20px 0 20px;
 }
 
 /* Banner -----------------------------------------------------------------------------------------------------------------*/
